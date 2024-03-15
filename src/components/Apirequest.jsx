@@ -1,5 +1,5 @@
 function translateText(text, targetLang) {
-  return fetch('https://api.deepl.com/v2/translate', {
+  return fetch('https://cors.bridged.cc/https://api.deepl.com/v2/translate', {
     method: 'POST',
     headers: {
       'Authorization': `DeepL-Auth-Key ${process.env.REACT_APP_DEEPL_AUTH_KEY}`,
